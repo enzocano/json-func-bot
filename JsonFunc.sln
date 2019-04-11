@@ -7,12 +7,18 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JsonBot.Sample", "function\
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug - NuGet Packages|Any CPU = Debug - NuGet Packages|Any CPU
 		Debug|Any CPU = Debug|Any CPU
+		Documentation|Any CPU = Documentation|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B8FB0DDA-59B7-4E98-8673-695E1160AD15}.Debug - NuGet Packages|Any CPU.ActiveCfg = Debug|Any CPU
+		{B8FB0DDA-59B7-4E98-8673-695E1160AD15}.Debug - NuGet Packages|Any CPU.Build.0 = Debug|Any CPU
 		{B8FB0DDA-59B7-4E98-8673-695E1160AD15}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{B8FB0DDA-59B7-4E98-8673-695E1160AD15}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B8FB0DDA-59B7-4E98-8673-695E1160AD15}.Documentation|Any CPU.ActiveCfg = Debug|Any CPU
+		{B8FB0DDA-59B7-4E98-8673-695E1160AD15}.Documentation|Any CPU.Build.0 = Debug|Any CPU
 		{B8FB0DDA-59B7-4E98-8673-695E1160AD15}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B8FB0DDA-59B7-4E98-8673-695E1160AD15}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection

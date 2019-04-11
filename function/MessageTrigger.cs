@@ -1,35 +1,32 @@
+using System.Threading.Tasks;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.Azure.WebJobs;
+using Microsoft.Azure.WebJobs.Extensions.Http;
+using Microsoft.AspNetCore.Http;
+using JsonBot.Sample.Integration;
+using Microsoft.Bot.Builder;
+using Microsoft.Extensions.Logging;
+
 namespace JsonBot.Sample
 {
-    using System.Threading.Tasks;
-    using Microsoft.AspNetCore.Mvc;
-    using Microsoft.Azure.WebJobs;
-    using Microsoft.Azure.WebJobs.Extensions.Http;
-    using Microsoft.AspNetCore.Http;
-    using Microsoft.Extensions.Logging;
-    using Microsoft.Bot.Builder.Integration.AspNet.Core;
-    using Microsoft.AspNetCore.Http.Internal;
-    using Microsoft.Bot.Connector.Authentication;
-
-    public static class MessageTrigger
+    public class MessageTrigger
     {
-        [FunctionName("messages")]
-        public static async Task<IActionResult> Run(
-            [HttpTrigger(AuthorizationLevel.Function, "post", Route = null)] HttpRequest req,
-            ILogger log)
+        private readonly IBotFrameworkFunctionsAdapter _adapter;
+        private readonly IBot _bot;
+
+        public MessageTrigger(
+            IBotFrameworkFunctionsAdapter adapter,
+            IBot bot)
         {
-            log.LogInformation("C# HTTP trigger function processed a request.");
+            _adapter = adapter;
+            _bot = bot;
+        }
 
-            var adapter = new BotFrameworkHttpAdapter(new SimpleCredentialProvider("<--app-id-->", @"<--app-password-->"));
-
-            var res = new DefaultHttpResponse(new DefaultHttpContext());
-
-            var bot = new FuncBot();
-
-            await adapter.ProcessAsync(req, res, bot);
-
-            return res.StatusCode == 200
-                ? (ActionResult)new OkResult()
-                : new BadRequestObjectResult(res.Body);
+        [FunctionName("messages")]
+        public async Task<IActionResult> Run(
+            [HttpTrigger(AuthorizationLevel.Function, "post", Route = null)] HttpRequest req)
+        {
+            return await _adapter.ProcessAsync(req, _bot);
         }
     }
 }
