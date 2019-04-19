@@ -5,6 +5,8 @@ VisualStudioVersion = 16.0.28729.10
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JsonBot.Sample", "function\JsonBot.Sample.csproj", "{B8FB0DDA-59B7-4E98-8673-695E1160AD15}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StaticFunctionBot", "StaticFunctionBot\StaticFunctionBot.csproj", "{FEED34F1-B352-418D-9E82-C5420F57E687}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug - NuGet Packages|Any CPU = Debug - NuGet Packages|Any CPU
@@ -21,6 +23,14 @@ Global
 		{B8FB0DDA-59B7-4E98-8673-695E1160AD15}.Documentation|Any CPU.Build.0 = Debug|Any CPU
 		{B8FB0DDA-59B7-4E98-8673-695E1160AD15}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B8FB0DDA-59B7-4E98-8673-695E1160AD15}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FEED34F1-B352-418D-9E82-C5420F57E687}.Debug - NuGet Packages|Any CPU.ActiveCfg = Debug|Any CPU
+		{FEED34F1-B352-418D-9E82-C5420F57E687}.Debug - NuGet Packages|Any CPU.Build.0 = Debug|Any CPU
+		{FEED34F1-B352-418D-9E82-C5420F57E687}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FEED34F1-B352-418D-9E82-C5420F57E687}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FEED34F1-B352-418D-9E82-C5420F57E687}.Documentation|Any CPU.ActiveCfg = Debug|Any CPU
+		{FEED34F1-B352-418D-9E82-C5420F57E687}.Documentation|Any CPU.Build.0 = Debug|Any CPU
+		{FEED34F1-B352-418D-9E82-C5420F57E687}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FEED34F1-B352-418D-9E82-C5420F57E687}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
