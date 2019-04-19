@@ -5,7 +5,6 @@ using Microsoft.Azure.WebJobs.Extensions.Http;
 using Microsoft.AspNetCore.Http;
 using JsonBot.Sample.Integration;
 using Microsoft.Bot.Builder;
-using Microsoft.Extensions.Logging;
 
 namespace JsonBot.Sample
 {
