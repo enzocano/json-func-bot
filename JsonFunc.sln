@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JsonBot.Sample", "function\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StaticFunctionBot", "StaticFunctionBot\StaticFunctionBot.csproj", "{FEED34F1-B352-418D-9E82-C5420F57E687}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Microsoft.Bot.Builder.Integration.Functions", "integration\Microsoft.Bot.Builder.Integration.Functions\Microsoft.Bot.Builder.Integration.Functions.csproj", "{2146C503-B8E0-4D56-96E5-1FC14E41617C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug - NuGet Packages|Any CPU = Debug - NuGet Packages|Any CPU
@@ -31,6 +33,14 @@ Global
 		{FEED34F1-B352-418D-9E82-C5420F57E687}.Documentation|Any CPU.Build.0 = Debug|Any CPU
 		{FEED34F1-B352-418D-9E82-C5420F57E687}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FEED34F1-B352-418D-9E82-C5420F57E687}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2146C503-B8E0-4D56-96E5-1FC14E41617C}.Debug - NuGet Packages|Any CPU.ActiveCfg = Debug|Any CPU
+		{2146C503-B8E0-4D56-96E5-1FC14E41617C}.Debug - NuGet Packages|Any CPU.Build.0 = Debug|Any CPU
+		{2146C503-B8E0-4D56-96E5-1FC14E41617C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2146C503-B8E0-4D56-96E5-1FC14E41617C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2146C503-B8E0-4D56-96E5-1FC14E41617C}.Documentation|Any CPU.ActiveCfg = Debug|Any CPU
+		{2146C503-B8E0-4D56-96E5-1FC14E41617C}.Documentation|Any CPU.Build.0 = Debug|Any CPU
+		{2146C503-B8E0-4D56-96E5-1FC14E41617C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2146C503-B8E0-4D56-96E5-1FC14E41617C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
