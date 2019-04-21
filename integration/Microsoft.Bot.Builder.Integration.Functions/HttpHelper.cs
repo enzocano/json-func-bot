@@ -1,15 +1,15 @@
-﻿using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.Bot.Schema;
-using Microsoft.Rest.Serialization;
-using Newtonsoft.Json;
-using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Text;
-
-namespace Microsoft.Bot.Builder.Integration.Functions
+﻿namespace Microsoft.Bot.Builder.Integration.AspNet.Functions
 {
+    using Microsoft.AspNetCore.Http;
+    using Microsoft.AspNetCore.Mvc;
+    using Microsoft.Bot.Schema;
+    using Microsoft.Rest.Serialization;
+    using Newtonsoft.Json;
+    using System;
+    using System.Collections.Generic;
+    using System.IO;
+    using System.Text;
+
     internal static class HttpHelper
     {
         private static readonly JsonSerializerSettings BotMessageSerializerSettings = new JsonSerializerSettings

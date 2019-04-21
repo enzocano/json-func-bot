@@ -1,13 +1,13 @@
-﻿using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.Bot.Connector.Authentication;
-using Microsoft.Extensions.Logging;
-using System;
-using System.Threading;
-using System.Threading.Tasks;
-
-namespace Microsoft.Bot.Builder.Integration.Functions
+﻿namespace Microsoft.Bot.Builder.Integration.AspNet.Functions
 {
+    using Microsoft.AspNetCore.Http;
+    using Microsoft.AspNetCore.Mvc;
+    using Microsoft.Bot.Connector.Authentication;
+    using Microsoft.Extensions.Logging;
+    using System;
+    using System.Threading;
+    using System.Threading.Tasks;
+
     public class BotFrameworkFunctionsAdapter : BotFrameworkAdapter, IBotFrameworkFunctionsAdapter
     {
         public BotFrameworkFunctionsAdapter(ICredentialProvider credentialProvider = null, IChannelProvider channelProvider = null, ILogger logger = null)

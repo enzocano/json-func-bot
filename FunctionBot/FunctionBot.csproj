@@ -6,6 +6,7 @@
   <ItemGroup>
     <PackageReference Include="Microsoft.Bot.Builder" Version="4.3.2" />
     <PackageReference Include="Microsoft.NET.Sdk.Functions" Version="1.0.26" />
+    <PackageReference Include="Willezone.Azure.WebJobs.Extensions.DependencyInjection" Version="1.0.1" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\integration\Microsoft.Bot.Builder.Integration.Functions\Microsoft.Bot.Builder.Integration.AspNet.Functions.csproj" />

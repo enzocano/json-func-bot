@@ -5,9 +5,11 @@ VisualStudioVersion = 16.0.28729.10
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JsonBot.Sample", "function\JsonBot.Sample.csproj", "{B8FB0DDA-59B7-4E98-8673-695E1160AD15}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StaticFunctionBot", "StaticFunctionBot\StaticFunctionBot.csproj", "{FEED34F1-B352-418D-9E82-C5420F57E687}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StaticFunctionBot", "StaticFunctionBot\StaticFunctionBot.csproj", "{FEED34F1-B352-418D-9E82-C5420F57E687}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Microsoft.Bot.Builder.Integration.Functions", "integration\Microsoft.Bot.Builder.Integration.Functions\Microsoft.Bot.Builder.Integration.Functions.csproj", "{2146C503-B8E0-4D56-96E5-1FC14E41617C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Bot.Builder.Integration.AspNet.Functions", "integration\Microsoft.Bot.Builder.Integration.Functions\Microsoft.Bot.Builder.Integration.AspNet.Functions.csproj", "{2146C503-B8E0-4D56-96E5-1FC14E41617C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FunctionBot", "FunctionBot\FunctionBot.csproj", "{2F9534EB-BBAB-477E-BA77-CA7C67D1669F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -41,6 +43,14 @@ Global
 		{2146C503-B8E0-4D56-96E5-1FC14E41617C}.Documentation|Any CPU.Build.0 = Debug|Any CPU
 		{2146C503-B8E0-4D56-96E5-1FC14E41617C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2146C503-B8E0-4D56-96E5-1FC14E41617C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2F9534EB-BBAB-477E-BA77-CA7C67D1669F}.Debug - NuGet Packages|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F9534EB-BBAB-477E-BA77-CA7C67D1669F}.Debug - NuGet Packages|Any CPU.Build.0 = Debug|Any CPU
+		{2F9534EB-BBAB-477E-BA77-CA7C67D1669F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F9534EB-BBAB-477E-BA77-CA7C67D1669F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2F9534EB-BBAB-477E-BA77-CA7C67D1669F}.Documentation|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F9534EB-BBAB-477E-BA77-CA7C67D1669F}.Documentation|Any CPU.Build.0 = Debug|Any CPU
+		{2F9534EB-BBAB-477E-BA77-CA7C67D1669F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2F9534EB-BBAB-477E-BA77-CA7C67D1669F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
