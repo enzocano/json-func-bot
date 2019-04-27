@@ -13,6 +13,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FunctionBot", "FunctionBot\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DIFunctionBot", "DIFunctionBot\DIFunctionBot.csproj", "{0DD17D9B-C6D1-4CF4-8416-3D3D265F9C05}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FunctionApp", "FunctionApp\FunctionApp.csproj", "{DD1A1C33-B051-43F0-99D0-D7AB231F7941}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug - NuGet Packages|Any CPU = Debug - NuGet Packages|Any CPU
@@ -61,6 +63,14 @@ Global
 		{0DD17D9B-C6D1-4CF4-8416-3D3D265F9C05}.Documentation|Any CPU.Build.0 = Debug|Any CPU
 		{0DD17D9B-C6D1-4CF4-8416-3D3D265F9C05}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0DD17D9B-C6D1-4CF4-8416-3D3D265F9C05}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DD1A1C33-B051-43F0-99D0-D7AB231F7941}.Debug - NuGet Packages|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD1A1C33-B051-43F0-99D0-D7AB231F7941}.Debug - NuGet Packages|Any CPU.Build.0 = Debug|Any CPU
+		{DD1A1C33-B051-43F0-99D0-D7AB231F7941}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD1A1C33-B051-43F0-99D0-D7AB231F7941}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD1A1C33-B051-43F0-99D0-D7AB231F7941}.Documentation|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD1A1C33-B051-43F0-99D0-D7AB231F7941}.Documentation|Any CPU.Build.0 = Debug|Any CPU
+		{DD1A1C33-B051-43F0-99D0-D7AB231F7941}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD1A1C33-B051-43F0-99D0-D7AB231F7941}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

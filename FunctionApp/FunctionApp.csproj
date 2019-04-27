@@ -4,12 +4,7 @@
     <AzureFunctionsVersion>v2</AzureFunctionsVersion>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="Microsoft.Bot.Builder" Version="4.3.2" />
-    <PackageReference Include="Microsoft.Bot.Builder.Dialogs" Version="4.3.2" />
     <PackageReference Include="Microsoft.NET.Sdk.Functions" Version="1.0.27" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\integration\Microsoft.Bot.Builder.Integration.Functions\Microsoft.Bot.Builder.Integration.AspNet.Functions.csproj" />
   </ItemGroup>
   <ItemGroup>
     <None Update="host.json">

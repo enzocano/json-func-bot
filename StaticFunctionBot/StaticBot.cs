@@ -9,7 +9,13 @@ namespace StaticFunctionBot
     {
         protected override Task OnMessageActivityAsync(ITurnContext<IMessageActivity> turnContext, CancellationToken cancellationToken)
         {
-            return turnContext.SendActivityAsync("Hello from <F>!");
+            var card = new ThumbnailCard()
+            {
+                Images = new CardImage[] { new CardImage("https://twitter.com/AzureFunctions/profile_image?size=bigger") },
+                Title = "Hello from Azure Functions"
+            }.ToAttachment();
+
+            return turnContext.SendActivityAsync(MessageFactory.Attachment(card));
         }
     }
 }
