@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <title>Global Azure Bootcamp - 2019</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.botframework.com/botframework-webchat/latest/webchat.js"></script>
+    <style>
+        html,
+        body {
+            height: 100%
+        }
+
+        body {
+            margin: 0
+        }
+
+        #webchat {
+            height: 100%;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="webchat" role="main"></div>
+    <script>
+        (async function () {
+            const userId = window.localStorage.getItem('userId') || '';
+            const userName = window.localStorage.getItem('userName') || '';
+            const res = await fetch(`./config?id=${userId}&name=${userName}`, { method: 'GET' });
+            const data = await res.json();
+            window.localStorage.setItem('userId', data.id);
+            window.localStorage.setItem('userName', data.name);
+            window.WebChat.renderWebChat({
+                directLine: window.WebChat.createDirectLine({ token: data.token }),
+                userID: data.id,
+                username: data.name,
+                locale: 'en-US',
+            }, document.getElementById('webchat'));
+            document.querySelector('#webchat > *').focus();
+        })().catch(err => console.error(err));
+    </script>
+</body>
+
+</html>
