@@ -21,30 +21,22 @@
             {
                 throw new ArgumentNullException(nameof(httpRequest));
             }
-
             if (bot == null)
             {
                 throw new ArgumentNullException(nameof(bot));
             }
-
             // deserialize the incoming Activity
             var activity = HttpHelper.ReadRequest(httpRequest);
-
             // grab the auth header from the inbound http request
             var authHeader = httpRequest.Headers["Authorization"];
-
             try
             {
                 // process the inbound activity with the bot
                 var invokeResponse = await ProcessActivityAsync(authHeader, activity, bot.OnTurnAsync, cancellationToken).ConfigureAwait(false);
-
                 // write the response, potentially serializing the InvokeResponse
                 return HttpHelper.GenerateResponse(invokeResponse);
             }
-            catch (UnauthorizedAccessException)
-            {
-                return new UnauthorizedResult();
-            }
+            catch (UnauthorizedAccessException) { return new UnauthorizedResult(); }
         }
     }
 }

@@ -11,12 +11,13 @@
     {
         protected override Task OnMembersAddedAsync(IList<ChannelAccount> membersAdded, ITurnContext<IConversationUpdateActivity> turnContext, CancellationToken cancellationToken)
         {
-            return turnContext.SendActivityAsync(MessageFactory.Text($"Welcome {membersAdded.FirstOrDefault().Name}!"));
+            return turnContext.SendActivityAsync(MessageFactory.Text($"Welcome {membersAdded.FirstOrDefault().Name}!\nYou are using Azure functions with DI!!"));
         }
 
-        protected override Task OnMessageActivityAsync(ITurnContext<IMessageActivity> turnContext, CancellationToken cancellationToken)
+        protected override async Task OnMessageActivityAsync(ITurnContext<IMessageActivity> turnContext, CancellationToken cancellationToken)
         {
-            return turnContext.SendActivityAsync(MessageFactory.Text($"echo: _{turnContext.Activity.Text}_"));
+            await turnContext.SendActivityAsync(MessageFactory.Text($"echo: _{turnContext.Activity.Text}_"));
+            await turnContext.SendActivityAsync(MessageFactory.Text($"from <F> with \U0001f497"));
         }
     }
 }
