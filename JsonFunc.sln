@@ -11,6 +11,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Bot.Builder.Integ
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FunctionBot", "FunctionBot\FunctionBot.csproj", "{2F9534EB-BBAB-477E-BA77-CA7C67D1669F}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DIFunctionBot", "DIFunctionBot\DIFunctionBot.csproj", "{0DD17D9B-C6D1-4CF4-8416-3D3D265F9C05}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug - NuGet Packages|Any CPU = Debug - NuGet Packages|Any CPU
@@ -51,6 +53,14 @@ Global
 		{2F9534EB-BBAB-477E-BA77-CA7C67D1669F}.Documentation|Any CPU.Build.0 = Debug|Any CPU
 		{2F9534EB-BBAB-477E-BA77-CA7C67D1669F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2F9534EB-BBAB-477E-BA77-CA7C67D1669F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0DD17D9B-C6D1-4CF4-8416-3D3D265F9C05}.Debug - NuGet Packages|Any CPU.ActiveCfg = Debug|Any CPU
+		{0DD17D9B-C6D1-4CF4-8416-3D3D265F9C05}.Debug - NuGet Packages|Any CPU.Build.0 = Debug|Any CPU
+		{0DD17D9B-C6D1-4CF4-8416-3D3D265F9C05}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0DD17D9B-C6D1-4CF4-8416-3D3D265F9C05}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0DD17D9B-C6D1-4CF4-8416-3D3D265F9C05}.Documentation|Any CPU.ActiveCfg = Debug|Any CPU
+		{0DD17D9B-C6D1-4CF4-8416-3D3D265F9C05}.Documentation|Any CPU.Build.0 = Debug|Any CPU
+		{0DD17D9B-C6D1-4CF4-8416-3D3D265F9C05}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0DD17D9B-C6D1-4CF4-8416-3D3D265F9C05}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
